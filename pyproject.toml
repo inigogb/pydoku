@@ -1,0 +1,30 @@
+[project]
+name = "pydoku"
+version = "0.1.0"
+description = "Sudoku Game made in Python 🐍"
+authors = [
+    {name = "Inigo Garcia Bastida", email = "inigogab@gmail.com"},
+]
+dependencies = [
+    "pygame>=2.6.1",
+]
+requires-python = ">=3.13"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=8.3.3",
+]
+lint = [
+    "flake8>=7.1.1",
+    "black>=24.10.0",
+]
